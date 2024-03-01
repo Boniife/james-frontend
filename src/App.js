@@ -35,7 +35,7 @@ const App = () => {
         <Route path="/live" exact Component={Live} />
         <Route path="/live-chat" exact Component={Msg} />
         <Route path="/new-proj" exact Component={NewProject} />
-        <Route path="/admin" exact Component={Admin} />
+        <Route path="/administer" exact Component={Admin} />
       </Routes>
     </Router>
   );
