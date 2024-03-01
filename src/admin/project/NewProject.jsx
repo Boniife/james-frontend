@@ -12,6 +12,8 @@ const initalState = {
 };
 
 const NewProject = () => {
+  const baseUrl = process.env.REACT_APP_PUBLIC_BASE_URL;
+
   const history = useNavigate();
   const [proj, setProj] = useState(initalState);
   // const [imgFile, setImgFile] = useState("");
@@ -29,7 +31,7 @@ const NewProject = () => {
     event.preventDefault();
 
     await axios
-      .post("http://localhost:3001/post/", proj)
+      .post(`${baseUrl}/post/`, proj)
       .then((res) => {
         if (res.status === 201) {
           history("/");

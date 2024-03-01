@@ -5,11 +5,13 @@ import './project.css';
 import Projcard from '../../admin/project/Projcard';
 
 const Project = () => {
+  const baseUrl = process.env.REACT_APP_PUBLIC_BASE_URL;
+
   const [data, setData] = useState([]);
 
   useEffect(() => {
     const fetchData = async () => {
-      const response = await fetch('http://localhost:3001/post');
+      const response = await fetch(`${baseUrl}/post`);
       const data = await response.json();
 
       setData(data?.post);

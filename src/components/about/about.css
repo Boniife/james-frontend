@@ -19,9 +19,9 @@
 }
 
 .about-content {
-  @apply mx-6 md:text-2xl capitalize text-gray-400 font-semibold
+  @apply mx-6 text-sm md:text-xl capitalize text-gray-400 font-semibold
 }
 
 .about-content p{
-  @apply hover:bg-red-200 hover:text-white
+  @apply hover:bg-red-200 hover:text-white md:text-xl text-lg
 }

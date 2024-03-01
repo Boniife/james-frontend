@@ -9,31 +9,27 @@ import Projcard from './Projcard';
 // import { Cards } from "../constants/constant";
 
 const Projects = () => {
-  const [data, setData] = useState([]);
 
-  // const info = await axios
-  //   .get("http://localhost:3001/post")
-  //   .then((res) => res.data.post)
-  //   .catch((err) => console.log(err));
-  // setData(info);
+const baseUrl = process.env.REACT_APP_PUBLIC_BASE_URL;
+
+  const [data, setData] = useState([]);
 
   const deleteProj = async (_id, title) => {
     if (window.confirm(`Delete ${title}`)) {
-      const response = await axios.delete(`http://localhost:3001/post/${_id}`);
+      const response = await axios.delete(`${baseUrl}/post/${_id}`);
       console.log(response);
     }
   };
 
   useEffect(() => {
     const fetchData = async () => {
-      const response = await fetch('http://localhost:3001/post');
+      const response = await fetch(`${baseUrl}/post`);
       const data = await response.json();
 
       setData(data?.post);
     };
     fetchData();
   }, []);
-  //console.log(data);
 
   const card =
     data.length > 0 &&
