@@ -23,7 +23,7 @@
 }
 
 .contact-input {
-  @apply w-[100%] bg-gray-300 rounded-md ml-5 hover:bg-red-200 text-black
+  @apply w-[100%] bg-gray-300 rounded-md ml-5 hover:bg-black text-white
 }
 
 label {
@@ -31,7 +31,7 @@ label {
 }
 
 .contact-textarea {
-  @apply w-[100%] bg-gray-300 ml-5 hover:bg-red-200 text-black
+  @apply w-[100%] bg-gray-300 ml-5 hover:bg-black text-white
 }
 
 .button-div {
