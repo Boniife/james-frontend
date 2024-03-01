@@ -1,0 +1,51 @@
+.contact {
+  @apply w-full h-fit mt-10 bg-gray-300 py-6;
+}
+
+.contact-head {
+  @apply flex justify-center hover:cursor-pointer;
+}
+
+.contact-head h3 {
+  @apply text-2xl font-extrabold text-gray-600 hover:text-red-200 tracking-widest
+}
+
+.contact-head-p {
+  @apply flex justify-center hover:cursor-pointer mt-9;
+}
+
+.contact-head-p > p {
+  @apply md:text-2xl font-extrabold text-gray-600 hover:text-red-200 tracking-widest capitalize
+}
+
+.contact-form {
+  @apply flex flex-col items-center mt-6
+}
+
+.contact-input {
+  @apply w-[100%] bg-gray-300 rounded-md ml-5 hover:bg-red-200 text-black
+}
+
+label {
+  @apply md:text-2xl text-gray-600 flex mb-6 hover:text-red-200
+}
+
+.contact-textarea {
+  @apply w-[100%] bg-gray-300 ml-5 hover:bg-red-200 text-black
+}
+
+.button-div {
+  @apply bg-gray-600 w-fit h-fit px-12 py-3 text-white hover:bg-red-200 rounded-sm text-lg
+}
+
+.contact-social {
+  @apply w-full h-fit flex justify-center mt-5 gap-3
+}
+
+.social-text {
+   @apply text-gray-600 md:text-2xl text-xl
+}
+
+.contact-button {
+  @apply flex flex-row md:text-3xl text-2xl
+}

@@ -1,0 +1,27 @@
+.about-section {
+  @apply w-full h-fit mt-8 md:px-20;
+}
+
+.about-head-text {
+  @apply flex justify-center hover:cursor-pointer;
+}
+
+.about-head-text > h3 {
+  @apply text-2xl font-extrabold text-gray-600 hover:text-red-200 tracking-widest
+}
+
+.about-me {
+  @apply md:flex md:items-center py-9
+}
+
+.about-me > img {
+  @apply rounded-full w-40 h-32 mb-4 px-5 md:px-0 md:mb-0
+}
+
+.about-content {
+  @apply mx-6 md:text-2xl capitalize text-gray-400 font-semibold
+}
+
+.about-content p{
+  @apply hover:bg-red-200 hover:text-white
+}

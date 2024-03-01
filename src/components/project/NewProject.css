@@ -1,0 +1,8 @@
+.new {
+  display: flex;
+  height: 100vh;
+}
+.newproject {
+  display: flex;
+  flex-direction: column;
+}

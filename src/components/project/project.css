@@ -1,0 +1,15 @@
+.project {
+  @apply w-full h-fit mt-5;
+}
+
+.project-head-text {
+  @apply flex justify-center hover:cursor-pointer capitalize;
+}
+
+.project-head-text > h3 {
+  @apply text-2xl font-extrabold text-gray-600 hover:text-red-200 tracking-widest
+}
+
+.project-card {
+  @apply grid grid-cols-1 md:px-0 px-3 md:grid-cols-3 mt-5 gap-5
+}

@@ -1,0 +1,15 @@
+.edu {
+  @apply w-full h-fit mt-16
+}
+
+.edu-head-text {
+  @apply flex justify-center hover:cursor-pointer;
+}
+
+.edu-head-text > h3 {
+  @apply text-2xl font-extrabold text-gray-600 hover:text-red-200 tracking-widest
+}
+
+.edu-uni {
+  @apply mt-10 flex items-center flex-col
+}

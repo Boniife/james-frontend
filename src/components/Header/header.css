@@ -1,0 +1,87 @@
+.header {
+  width: 100%;
+  height: 30px;
+  padding: 0;
+  position: fixed;
+}
+
+.header .nav-link {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.nav-link:visited {
+  text-decoration: underline;
+}
+.nav-link:active {
+  color: red;
+  text-decoration: underline;
+}
+.nav-menu .nav-item {
+  list-style: none;
+  padding-right: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 500;
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.header ul {
+  display: flex;
+  justify-content: center;
+}
+
+.header .nav-btn {
+  padding: 5px;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: var(--main-color);
+  visibility: hidden;
+  opacity: 0;
+  font-size: 1.8rem;
+}
+@media only screen and (max-width: 768px) {
+  .header .nav-btn {
+    visibility: visible;
+    opacity: 1;
+  }
+  .header .nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--other-color);
+    transition: 2s;
+    transform: translateY(-100vh);
+  }
+  .header .responsive_nav {
+    transform: none;
+  }
+  .nav .nav-close-btn {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    font-size: x-large;
+  }
+  .nav .nav-link {
+    font-size: 0.7rem;
+  }
+  .header .nav-open-btn {
+    top: 2rem;
+    font-size: x-large;
+  }
+  .header ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+  }
+  .header .nav-link {
+    color: var(--odd-color);
+  }
+}

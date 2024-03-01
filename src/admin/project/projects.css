@@ -1,0 +1,5 @@
+
+.proj-button {
+  @apply flex justify-center w-fit h-fit p-6 bg-gray-400 m-6 items-center rounded-md
+}
+

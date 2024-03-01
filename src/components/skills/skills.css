@@ -1,0 +1,21 @@
+.skills {
+  @apply w-full h-fit px-6 mt-5 md:bg-gray-300 py-6
+}
+
+.skills-head {
+  @apply flex justify-center hover:cursor-pointer;
+}
+
+.skills-head > h3 {
+  @apply text-2xl font-extrabold text-gray-600 hover:text-red-200 tracking-widest
+}
+
+.skills-text-head {
+  @apply mt-10 grid grid-cols-1 px-10 
+}
+
+@media only screen and (min-width: 900px) {
+ .skills-text-head {
+  @apply grid grid-cols-4
+ }
+}

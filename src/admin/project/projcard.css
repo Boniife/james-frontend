@@ -1,0 +1,15 @@
+.proj-card-container {
+  @apply w-full h-fit px-3 bg-gray-200 hover:bg-red-200 ;
+}
+
+.proj-card-proj-img {
+  @apply w-full h-[10rem]
+}
+
+.proj-card-proj-title {
+  @apply flex justify-center py-4 font-bold text-gray-600 text-lg hover:text-white
+}
+
+.proj-card-proj-desc {
+  @apply flex justify-center py-4 font-bold text-gray-600 text-lg hover:text-white
+}

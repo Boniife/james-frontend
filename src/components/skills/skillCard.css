@@ -1,0 +1,17 @@
+.skill-card {
+    @apply w-full h-fit mx-1;
+}
+
+.skill-wrapper {
+    @apply bg-gray-600 text-white px-14 py-2 rounded-[5px] mb-4 hover:bg-red-300 cursor-pointer
+}
+
+.skill-wrapper > h2 {
+    @apply text-2xl capitalize
+}
+
+@media only screen and (min-width: 900px) {
+    .skill-card {
+       @apply w-fit h-fit;
+    }
+}
